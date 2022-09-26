@@ -1,0 +1,36 @@
+.footer {
+
+    height: 237px;
+    background: #C9ADC6;
+
+    &__container {
+        display: flex;
+        justify-content: left;
+        margin-left: 7%;
+        align-items: center;
+        padding-top: 80px;
+        flex-direction: row;
+        column-gap: 64px;
+
+    }
+
+    &__menuItem {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 21px;
+        color: #FFFFFF;
+        text-decoration: none;
+
+
+    }
+
+
+    &__itemsBox {
+        column-gap: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+
+}

@@ -1,0 +1,54 @@
+.card {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 37px;
+
+
+    @media screen and (max-width:1277px) {
+       
+       flex-direction: column;
+       
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width:1023px) {
+
+            margin: 10px;
+        }
+    
+        @media screen and (max-width:767px) {
+            margin: 15px;
+        }
+    }
+
+    &__info {
+        height: 113px;
+        background: #CEB3CB;
+        text-align: left;
+        padding-left: 23px;
+       
+    }
+
+    &__heading {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+    &__heading2 {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+}

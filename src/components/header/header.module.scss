@@ -1,0 +1,82 @@
+.main {
+    height: 120px;
+    position: relative;
+    background: #FFFFFF;
+
+
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__logo {
+        position: absolute;
+        width: 122px;
+        height: 63px;
+        top: 33px;
+        left: 120px;
+        bottom: 24px;
+
+        @media screen and (max-width:935px) {
+            top: 33px;
+            left:50%;
+            bottom: 24px;
+            position: relative;
+        }
+    }
+
+    &__menuContainer {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 207px;
+        top: 50px;
+
+        @media screen and (max-width:935px) {
+            align-self: center;
+            justify-self: center;
+            position: relative;
+        }
+
+
+    }
+
+
+
+    &__menuItems {
+        column-gap: 40px;
+        display: flex;
+        flex-direction: row;
+        user-select: none;
+        cursor: pointer;
+
+        @media screen and (max-width:920px) {
+            flex-direction: column;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #000;
+        }
+
+    }
+
+    &__menuItem {
+        height: 30px;
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        /* identical to box height, or 125% */
+        text-decoration: none;
+        color: #B08EAD;
+        white-space: nowrap;
+    }
+
+}
